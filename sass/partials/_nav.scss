@@ -1,6 +1,11 @@
 .nav {
   background: getColour(white) !important;
 
+  
+  &__title {
+    color: getColour(brand) !important;
+  }
+  
   .navbar-toggler:focus,
   .navbar-toggler:active,
   .navbar-toggler-icon:focus,

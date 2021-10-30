@@ -19,6 +19,10 @@ body {
   background: #F4F3EE !important;
 }
 
+.nav__title {
+  color: #262626 !important;
+}
+
 .nav .navbar-toggler:focus,
 .nav .navbar-toggler:active,
 .nav .navbar-toggler-icon:focus,
