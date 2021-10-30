@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: getColour(bg-grey);
+  font-family: $font;
+  color: getColour(tb-font);
+  margin: 0;
+}
+
+.row {
+  max-width: 90%;
+}

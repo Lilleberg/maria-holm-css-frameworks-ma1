@@ -1,0 +1,29 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #E5E5E5;
+  font-family: "open sans", sans-serif;
+  color: #8D8D8D;
+  margin: 0;
+}
+
+.row {
+  max-width: 90%;
+}
+
+nav {
+  padding: 10px 20px;
+}
+
+nav .navbar-toggler-icon {
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */
