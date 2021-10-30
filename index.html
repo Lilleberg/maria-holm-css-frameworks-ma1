@@ -18,7 +18,8 @@
 
 <body class="d-flex flex-column min-vh-100">
   <div class="wrapper flex-grow-1">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light px-3 py-2 py-lg-0 px-lg-5 shadow nav">
       <a href="index.html"
         class="navbar-brand fw-bold fs-1 nav__title">MA1</a>
 
@@ -31,42 +32,40 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a href="index.html" class="nav-link active"
+        <ul class="navbar-nav pb-2 pb-lg-0 ms-auto nav__inner">
+          <li class="nav-item active nav__item">
+            <a href="index.html"
+              class="nav-link active nav__link nav__link--active"
               aria-current="page">Home <span
                 class="visually-hidden">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav__item">
             <a href="/" class="nav-link nav__link">About</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <section class="row mx-auto">
-      <h1 class="text-center my-4">Page heading</h1>
+    <h1 class="text-center my-4 my-lg-5">Page heading</h1>
 
-      <div class="squares">
-        <div class="col-md">
-          <div class="squares__item--light"></div>
-          <div class="squares__item--light"></div>
-          <div class="squares__item--pink-border"></div>
-          <div class="squares__item--light"></div>
-        </div>
-        <div class="col-md">
-          <div class="squares__item--light"></div>
-          <div class="squares__item--pink"></div>
-          <div class="squares__item--light"></div>
-          <div class="squares__item--pink-border"></div>
-        </div>
+    <div class="squares mb-5 mx-auto">
+      <div class="col-md-6 col-xl-3 squares__item"></div>
+      <div class="col-md-6 col-xl-3 squares__item"></div>
+      <div class="col-md-6 col-xl-3 squares__item--pink-border">
       </div>
-    </section>
-
+      <div class="col-md-6 col-xl-3 squares__item"></div>
+      <div class="col-md-6 col-xl-3 squares__item"></div>
+      <div class="col-md-6 col-xl-3 squares__item--pink">
+      </div>
+      <div class="col-md-6 col-xl-3 squares__item"></div>
+      <div class="col-md-6 col-xl-3 squares__item--pink-border">
+      </div>
+    </div>
   </div>
 
-  <footer class="d-flex flex-column align-items-center">
-    <div class="footer__contact-email pb-2">hello@email.com</div>
+  <footer
+    class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-between py-2 px-5">
+    <div class="footer__contact-email pb-2 pg-lg-0">hello@email.com</div>
     <div>Copyright 2020</div>
   </footer>
 

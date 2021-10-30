@@ -1,0 +1,42 @@
+.squares {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 2rem;
+  max-width: 700px;
+
+  &__item {
+    border-radius: 15px;
+    border: 3px solid getColour(white);
+    height: 355px;
+    width: 357px;
+    padding: 0;
+    background: getColour(white);
+
+    &--pink {
+      @extend .squares__item;
+      background: getColour(primary);
+      border-color: white;
+    }
+
+    &--pink-border {
+      @extend .squares__item;
+      background-color: white;
+      border-color: getColour(primary);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+
+    &__item {
+      height: 263px;
+      width: 264px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+  }
+}

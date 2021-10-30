@@ -1,7 +1,20 @@
-nav {
-  padding: 10px 20px;
+.nav {
+  background: getColour(white) !important;
 
-  .navbar-toggler-icon {
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus,
+  .navbar-toggler {
     border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &__link--active {
+    color: getColour(primary) !important;
+  }
+
+  &__link {
+    text-transform: uppercase;
   }
 }
